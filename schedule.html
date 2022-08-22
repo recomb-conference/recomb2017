@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RECOMB 2017 - Schedule</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/agenda.css" rel="stylesheet">	
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<style>
+	ol {
+	  margin-left: 0;
+	  padding-left: 0;
+	}
+	ol.begin {
+	  counter-reset: item;
+	}
+
+	ol.begin li,
+	ol.continue li {
+	  display: block;
+	  margin-bottom: .5em;
+	  margin-left: 2em;
+	}
+
+	ol.begin li:before,
+	ol.continue li::before {
+	  display: inline-block;
+	  content: "[PT" counter(item)"]";
+	  counter-increment: item;
+	  width: 2.5em;
+	  margin-left: -2em;
+	  font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<a id="schedule-shortcut" href="index.html" class="btn btn-dark btn-lg toggle"><i class="fa fa-home"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li>
+                <a href="index.html" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="index.html#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="index.html#services" onclick=$("#menu-close").click();>Overview</a>
+            </li>
+            <li class="dropdown">
+                <a href="registration.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Register <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                        <li><a href="travelfellowship.html">Travel Fellowship</a></li>
+                        <li><a href="accommodation.html">Hotel Information</a></li>
+                </ul>
+            </li>
+                        <li>
+                <a href="index.html#portfolio" onclick=$("#menu-close").click();>Submit to RECOMB</a>
+            </li>
+            <li class="dropdown">
+                <a href="program.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Program <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                        <li><a href="accepted_posters.html">Accepted Posters</a></li>
+			<li><a href="awards.html">Award Winners</a></li>
+                        <li><a href="useful_links.html">Useful Links</a></li>
+                </ul>
+            </li>
+			<li>
+                <a href="keynote.html" onclick=$("#menu-close").click();>Keynotes</a>
+            </li>
+			<li>
+                <a href="committees.html" onclick=$("#menu-close").click();>Committees</a>
+            </li>
+		<li class="dropdown">
+                <a href="satellites.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Satellites <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="recomb-seq.html">RECOMB-Seq</a></li>
+                        <li><a href="http://computationalgenomics.bioinformatics.ucla.edu/2017-recomb-satellite-meetings/" target=_blank>RECOMB-Genetics</a></li>
+                        <li><a href="http://computationalgenomics.bioinformatics.ucla.edu/2017-recomb-satellite-meetings/" target=_blank>RECOMB-CCB</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html#contact" onclick=$("#menu-close").click();>Venue</a>
+            </li>
+		<li><br /><center><img src="img/logo-banner.png" alt="" width="95%"></center></li>
+        </ul>
+    </nav>
+	<header class="main-header">
+		<div class="text-vertical-center">
+            <font color=white>
+			<h1>RECOMB 2017</h1>
+            <h2>The 21st Annual International Conference on Research in Computational Molecular Biology</h2>
+			<h3>Hong Kong, May 3-7, 2017</h3>
+			<h4>(May 3: Registration &amp; Reception, May 4-7: Talks)</h4>
+			</font>
+        </div>
+	</header>
+	<!--Body-->
+	<div class="container">
+		<center>
+			<h3>Schedule</h3>
+			<p>(KT: Keynote, PT: Proceedings Talk, HT: Highlights Talk)</p>
+			<p><b>Venue: LT1, Level 1 Cheng Yu Tung (CYT) Building, The Chinese University of Hong Kong (CUHK)</b></p>
+			<p>Jump to: <a href="#day0">Day 0</a>, <a href="#day1">Day 1</a>, <a href="#day2">Day 2</a>, <a href="#day3">Day 3</a>, <a href="#day4">Day 4</a>			
+			<p>Download <a href="data/program_booklet.pdf">Program Booklet</a>
+		</center>
+		<div class="agenda">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Single event in a single day -->
+                    <tr id="day0">
+                        <td class="agenda-date" class="active" rowspan="1">
+                            <div class="dayofmonth">03</div>
+                            <div class="dayofweek">Wednesday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            6:00 PM - 9:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>Registration and Welcome Reception</b><br/>
+				Regency Ballroom II, Hyatt Regency Hong Kong, Sha Tin<br/>
+				Address: 18 Chak Cheung Street, Sha Tin, N.T.
+                            </div>
+                        </td>
+                    </tr>
+					<tr id="day1">
+                        <td class="agenda-date" class="active" rowspan="15">
+                            <div class="dayofmonth">04</div>
+                            <div class="dayofweek">Thursday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 8:45 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Registration
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            8:45 AM - 9:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Opening Remarks
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            9:00 AM - 10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S01: Precision  Health</b><br/>
+								Session Chair: Eleazar Eskin<br/> 
+								[KT] Jun Wang (iCarbonX)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:00 AM - 10:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:20 AM - 11:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S02: Sequencing I</b><br />
+				Session Chair: Laxmi Parida<br/>
+								<ol class="begin">
+									<li>Sudipto Mukherjee, Mark Chaisson, Sreeram Kannan and Evan Eichler. <b>Resolving multicopy duplications de novo using polyploid phasing</b></li>
+								<li>Joshua Welch, Alexander Hartemink and Jan Prins. <a href="http://biorxiv.org/content/early/2017/04/24/130336">E Pluribus Unum: United States of Single Cells</a></li>
+								<li>Alexander Shlemov, Sergey Bankevich, Andrey Bzikadze, Yana Safonova and Pavel Pevzner. <a href="https://arxiv.org/abs/1704.07184">Reconstructing antibody repertoires from error-prone immunosequencing datasets</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:20 AM - 11:30 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S03: Population and Disease Studies I</b><br />
+				Session Chair: Fereydoun Hormozdiari<br/>
+								<ol class="begin">
+									<li>Yue Wu, Farhad Hormozdiari, Jong Wha J Joo and Eleazar Eskin. <b>Improving imputation accuracy by inferring causal variants in genetic studies</b></li>
+									<li>Xiaoqian Wang, Li Shen and Heng Huang. <b>Longitudinal Genotype-Phenotype Association Study via Temporal Structure Auto-Learning Predictive Model</b></li>
+								</ol>
+								<p><b>[HT]</b> Elior Rahmani, Noah Zaitlen, Yael Baran, Celeste Eng, Donglei Hu, Joshua Galanter, Sam Oh, Esteban Burchard, Eleazar Eskin, James Zou and Eran Halperin. <b>Sparse PCA corrects for cell type heterogeneity in epigenome-wide association studies</b></p>
+								
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            12:30 PM - 2:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Lunch Break (lunch provided)</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+							2:00 PM - 3:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S04: Translational Science</b><br/>
+								Session Chair: Siu Ming Yiu<br/> 
+								[KT] Colin Collins (Vancouver Prostate Centre)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:00 PM - 3:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:20 PM - 4:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S05: Networks and Systems</b><br />
+				Session Chair: Kevin Yip<br/>
+								<ol class="begin">
+									<li>Robert Osazuwa Ness, Karen Sachs, Parag Mallick and Olga Vitek. <b>A Bayesian Active Learning Experimental Design for Inferring Signaling Networks</b></li>
+								<li>Yijie Wang, Dong-Yeon Cho, Hangnoh Lee, Brian Oliver and Teresa Przytycka. <a href="https://arxiv.org/abs/1704.05343">NetREX: Network Rewiring using EXpression - Towards Context Specific Regulatory Networks</a></li>
+								<li>Yunan Luo, Xinbin Zhao, Jingtian Zhou, Jinling Yang, Yanqing Zhang, Wenhua Kuang, Jian Peng, Ligong Chen and Jianyang Zeng. <a href="http://biorxiv.org/content/early/2017/03/20/100305">A Network Integration Approach for Drug-Target Interaction Prediction and Computational Drug Repositioning from Heterogeneous Information</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:20 PM - 4:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:30 PM - 5:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S06: Alignment, Search and Compression</b><br />
+				Session Chair: Knut Reinert<br/>
+								<ol class="begin">
+									<li>Brad Solomon and Carl Kingsford. <b>Improved Search of Large Transcriptomic Sequencing Databases Using Split Sequence Bloom Trees</b> <u><font color=red>joint with</font></u> Chen Sun, Robert Harris, Rayan Chikhi and Paul Medvedev. <b>Allsome Sequence Bloom Trees</b></li>
+								<li>Guillaume Holley, Roland Wittler, Jens Stoye and Faraz Hach. <b>Dynamic Alignment-free and Reference-free Read Compression</b></li>
+								<li>Chirag Jain, Alexander Dilthey, Sergey Koren, Srinivas Aluru and Adam Phillippy. <b>A Fast Approximate Algorithm for Mapping Long Reads to Large Reference Databases</b></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td class="agenda-time">
+                            5:30 PM - 5:40 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            5:40 PM - 6:40 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>Business Meeting</b><br />
+				Venue: Room 203, CYT Building
+                            </div>
+                        </td>
+                    </tr>
+					<tr id="day2">
+                        <td class="agenda-date" class="active" rowspan="13">
+                            <div class="dayofmonth">05</div>
+                            <div class="dayofweek">Friday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 9:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Registration
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            9:00 AM - 10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S07: Network and Pathways</b><br/>
+								Session Chair: Teresa Przytycka<br/> 
+								[KT] Ben Raphael (Princeton)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:00 AM - 10:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:20 AM - 11:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S08: Cancer I</b><br />
+				Session Chair: Paul Medvedev<br/>
+								<ol class="begin">
+									<li>Phuong Dao, Yoo-Ah Kim, Damian Wojtowicz, Sanna Madan, Roded Sharan and Teresa Przytycka. <a href="https://arxiv.org/abs/1704.08889">BeWith: A Between-Within Method for Module Discovery in Cancer using Integrated Analysis of Mutual Exclusivity, Co-occurrence and Functional Interactions</a></li>
+								<li>Simone Zaccaria, Mohammed El-Kebir, Gunnar Klau and Ben Raphael. <b>The Copy-Number Tree Mixture Deconvolution Problem and Applications to Multi-Sample Bulk Sequencing Tumor Data</b></li>
+								<li>Ewa Szczurek and Dariusz Matlak. <a href="http://biorxiv.org/content/early/2017/04/24/130369">Epistasis in genomic and survival data of cancer patients</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:20 AM - 11:30 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S09: Protein-DNA Interactions and Gene Regulation</b><br />
+				Session Chair: Mona Singh<br/>			
+							<ol class="begin">
+									<li>Jingkang Zhao, Dongshunyi Li, Jungkyun Seo, Andrew Allen and Raluca Gordan. <b>Quantifying the impact of non-coding variants on transcription factor-DNA binding</b></li>
+								<li>Yuchun Guo, Kevin Tian, Haoyang Zeng and David K. Gifford. <a href="http://biorxiv.org/content/early/2017/04/26/130815">K-mer Set Memory (KSM) motif representation enables accurate prediction of the impact of regulatory variants</a></li>
+								<li>Yaron Orenstein, Ryan Kim, Polly Fordyce and Bonnie Berger. <a href="https://www.mendeley.com/sneak-peek/cellpress/#9ee5fd9a-ab68-4cd5-803d-11170bd97ea4">Joker de Bruijn: sequence libraries to cover all k-mers using joker characters</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            12:30 PM - 2:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Lunch Break (lunch provided)</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+							2:00 PM - 3:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S10: Sequencing II</b><br/> 
+								Session Chair: Martin Vingron<br/>
+								[KT] Michael Schnall-Levin (10X Genomics)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:00 PM - 3:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:20 PM - 4:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S11: New Directions</b><br />
+				Session Chair: Jian Ma<br/>
+								<ol class="begin">
+									<li>Zhen Li, Sheng Wang, Yizhou Yu and Jinbo Xu. <a href="https://arxiv.org/abs/1704.07207">Predicting membrane protein contacts from non-membrane proteins by deep transfer learning</a></li>
+								</ol>
+								<p><b>[HT]</b> Michael Altenbuchinger, Thorsten Rehberg, Helena Zacharias, Frank Stämmler, Katja Dettmer, Daniela Weber, Andreas Hiergeist, André Gessner, Ernst Holler, Peter Oefner and Rainer Spang. <b>Reference point insensitive molecular data analysis</b></p>
+								<ol class="continue">
+								<li>Uri Keich and William Stafford Noble. <b>Progressive calibration and averaging for tandem mass spectrometry statistical confidence estimation: Why settle for a single decoy?</b></li>
+								<li>Sai Zhang, Hailin Hu, Jingtian Zhou, Xuan He, Tao Jiang and Jianyang Zeng. <a href="http://biorxiv.org/content/early/2016/11/15/067108">ROSE: a deep learning based framework for predicting ribosome stalling</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:30 PM - 6:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Poster Session I [Odd numbered posters]<br/>
+				Venue: The Gastronomy Club, Level 5, CYT Building
+                            </div>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td class="agenda-time">
+                            6:00 PM - 6:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                
+                            </div>
+                        </td>
+                    </tr>	
+		    <tr>
+                        <td class="agenda-time">
+                            6:30 PM - 9:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>Banquet [ticket required]</b><br/>
+				ClubONE on the Park, Science Park<br/>
+				Address: Shop 061-066, G/F, Building 12W, No. 12 Science Park West Avenue, Hong Kong Science Park, Sha Tin, N.T.
+                            </div>
+                        </td>
+                    </tr>
+					<tr id="day3">
+                        <td class="agenda-date" class="active" rowspan="13">
+                            <div class="dayofmonth">06</div>
+                            <div class="dayofweek">Saturday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 9:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Registration
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            9:00 AM - 10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S12: Early Cancer Detection and Therapy</b><br/> 
+								Session Chair: Cenk Sahinalp<br/>
+								[KT] Joe Gray (OHSU)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:00 AM - 10:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:20 AM - 11:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S13: Cancer II</b><br />
+				Session Chair: Ben Raphael<br/>
+								<ol class="begin">
+									<li>Ashok Rajaraman and Jian Ma. <b>Towards Recovering Allele-specific Cancer Genome Graphs</b></li>
+								</ol>
+								<p><b>[HT]</b> David Amar, Shai Izraeli and Ron Shamir. <b>Utilizing somatic mutation data from numerous studies for cancer research: proof of concept and applications</b></p>
+								<ol class="continue">
+								<li>Borislav Hristov and Mona Singh. <a href="https://arxiv.org/abs/1704.08544">Network-based coverage of mutational profiles reveals cancer genes</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:20 AM - 11:30 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S14: Epigenomics</b><br />
+				Session Chair: Raluca Gordan<br/>
+								<p><b>[HT]</b> Przemyslaw Szalaj, Zhonghui Tang, Paul Michalski, Michal Pietal, Michal Sadowski, Oskar Luo, Yijun Ruan and Dariusz Plewczynski. <b>3D-GNOME: high-resolution model of chromatin looping architecture in human genome</b></p>
+							<ol class="begin">
+								<li>Elior Rahmani, Regev Schweiger, Liat Shenhav, Eleazar Eskin and Eran Halperin. <b>A Bayesian Framework for Estimating Cell Type Composition from DNA Methylation Without the Need for Methylation Reference</b></li>
+								<li>Michael Leung, Andrew Delong and Brendan Frey. <a href="http://biorxiv.org/content/early/2017/04/27/130591">Inference of the Human Polyadenylation Code</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            12:30 PM - 2:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Lunch Break (lunch provided)</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+							2:00 PM - 3:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>S15: Here and
+Now of Genomic Medicine</b><br/> 
+								Session Chair: Ron Shamir<br/>
+								[KT] Laxmi Parida (IBM Research)
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:00 PM - 3:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:20 PM - 4:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S16: Population and Disease Studies 2</b><br />
+				Session Chair: Jianyang Zeng<br/>
+								<ol class="begin">
+									<li>Linh Huynh and Fereydoun Hormozdiari. <a href="http://biorxiv.org/content/early/2017/04/25/129775">Ultra-accurate complex disorder prediction: case study of neurodevelopmental disorders</a></li>
+								<li>Regev Schweiger, Eyal Fisher, Elior Rahmani, Liat Shenhav, Saharon Rosset and Eran Halperin. <b>Using stochastic approximation techniques to efficiently construct confidence intervals for heritability</b></li>
+								<li>Ardalan Naseri, Xiaoming Liu, Shaojie Zhang and Degui Zhi. <a href="http://biorxiv.org/content/early/2017/01/26/103325">Ultra-fast Identity by Descent Detection in Biobank-Scale Cohorts using Positional Burrows-Wheeler Transform</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:20 PM - 4:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:30 PM - 5:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S17: Genome Data Structures</b><br />
+				Session Chair: John Kececioglu<br/>
+								<ol class="begin">
+									<li>Benedict Paten, Adam Novak, Erik Garrison, Eric Dawson and Glenn Hickey. <b>Superbubbles, Ultrabubbles and Cacti</b></li>
+								<li>David Haussler, Maciej Smuga-Otto, Benedict Paten, Adam Novak, Sergei Nikitin, Maria Zueva and Miagkov Dmitrii. <b>A flow procedure for the linearization of genome variation graphs</b></li>
+								<li>Christopher Pockrandt, Marcel Ehrhardt and Knut Reinert. <a href="https://arxiv.org/abs/1608.02413">EPR-dictionaries: A practical and fast data structure for constant time searches in unidirectional and bidirectional FM-indices</a></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td class="agenda-time">
+                            5:30 PM - 7:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Poster Session II [Even numbered posters]<br/>
+				Venue: The Gastronomy Club, Level 5, CYT Building
+                            </div>
+                        </td>
+                    </tr>
+                    <tr id="day4">
+                        <td class="agenda-date" class="active" rowspan="7">
+                            <div class="dayofmonth">07</div>
+                            <div class="dayofweek">Sunday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:00 AM - 9:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Registration
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            9:00 AM - 10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S18: Metagenomics</b><br />
+				Session Chair: Wing Kin Sung<br/>
+								<ol class="begin">
+									<li>Victoria Popic, Volodymyr Kuleshov, Michael Snyder and Serafim Batzoglou. <a href="http://biorxiv.org/content/early/2017/04/26/130997">GATTACA: Lightweight metagenomic binning using Kmer Counting</a></li>
+								<li>Soyeon Ahn and Haris Vikalo. aBayesQR: <b>A Bayesian method for reconstruction of viral populations characterized by low diversity</b></li>
+								<li>Wontack Han, Mingjie Wang and Yuzhen Ye. <b>A concurrent subtractive assembly approach for identification of disease associated sub-metagenomes</b></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:00 AM - 10:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:20 AM - 11:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S19: Protein Structure and Proteomics</b><br />
+				Session Chair: Serafim Batzoglou<br/>
+								<ol class="begin">
+									<li>Adegoke Ojewole, Jonathan Jou, Vance Fowler and Bruce Donald. <b>BBK* (Branch and Bound over K*): A Provable and Efficient Ensemble-Based Algorithm to Optimize Stability and Binding Affinity over Large Sequence Spaces</b></li>
+								</ol>
+								<p><b>[HT1]</b> Sheng Wang, Siqi Sun, Zhen Li, Renyu Zhang and Jinbo Xu. <b>Folding Large Proteins by Ultra-Deep Learning</b></p>
+								
+								<p><b>[HT2]</b>Vikram Alva Kullanja, Johannes Söding and Andrei Lupas. <b>A vocabulary of ancient peptides at the origin of folded proteins </b></p>
+							
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:20 AM - 11:30 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>S20: Phylogenetics and Multiple Sequence Alignment</b><br />
+				Session Chair: Jinbo Xu<br/>
+								<ol class="begin">
+									<li>Shubhanshu Shekhar, Sebastien Roch and Siavash Mirarab. <a href="https://arxiv.org/abs/1704.06831">Species tree estimation using ASTRAL: how many genes are enough?</a></li>
+									<li>Jesper Jansson, Andrzej Lingas, Ramesh Rajaby and Wing-Kin Sung. <b>Determining the Consistency of Resolved Triplets and Fan Triplets</b></li>
+									<li>Dan Deblasio and John Kececioglu. <b>Boosting alignment accuracy by adaptive local realignment</b></li>
+								</ol>
+							
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            12:30 PM - 1:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Awards Ceremony and Closing Remarks
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	</div>
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; RECOMB 2017 | Theme: Bootstrap Stylish Portfolio | Design: Sumaiya Nazeen</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+	$('ul.sidebar-nav li.dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+    </script>
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+</body>

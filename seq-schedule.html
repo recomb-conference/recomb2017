@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RECOMB 2017 - Satellite Programs</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+	<link href="css/agenda.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<style>
+	ol {
+	  margin-left: 0;
+	  padding-left: 0;
+	}
+	ol.begin, 
+	ol.begin-st {
+	  counter-reset: item;
+	}
+
+	ol.begin li,
+	ol.continue li {
+	  display: block;
+	  margin-bottom: .5em;
+	  margin-left: 2em;
+	}
+
+	ol.begin li:before,
+	ol.continue li::before {
+	  display: inline-block;
+	  content: "[RT" counter(item)"]";
+	  counter-increment: item;
+	  width: 2.5em;
+	  margin-left: -2em;
+	  font-weight: bold;
+	}
+	
+	ol.begin-st li,
+	ol.continue-st li {
+	  display: block;
+	  margin-bottom: .5em;
+	  margin-left: 2em;
+	}
+
+	ol.begin-st li:before,
+	ol.continue-st li::before {
+	  display: inline-block;
+	  content: "[ST" counter(item)"]";
+	  counter-increment: item;
+	  width: 2.5em;
+	  margin-left: -2em;
+	  font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<a id="schedule-shortcut" href="recomb-seq.html" class="btn btn-dark btn-lg toggle"><i class="fa fa-home"></i></a>
+	<!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li>
+                <a href="index.html" onclick=$("#menu-close").click();>RECOMB Home</a>
+            </li>
+            <li>
+                <a href="index.html#about" onclick=$("#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="index.html#services" onclick=$("#menu-close").click();>Overview</a>
+            </li>
+            <li class="dropdown">
+                <a href="registration.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Register <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                        <li><a href="travelfellowship.html">Travel Fellowship</a></li>
+                        <li><a href="accommodation.html">Hotel Information</a></li>
+                </ul>
+            </li>
+                        <li>
+                <a href="index.html#portfolio" onclick=$("#menu-close").click();>Submit to RECOMB</a>
+            </li>
+            <li class="dropdown">
+                <a href="program.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Program <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="accepted_papers.html">Accepted Papers</a></li>
+                        <li><a href="accepted_posters.html">Accepted Posters</a></li>
+			<li><a href="awards.html">Award Winners</a></li>
+                        <li><a href="useful_links.html">Useful Links</a></li>
+                </ul>
+            </li>
+			<li>
+                <a href="keynote.html" onclick=$("#menu-close").click();>Keynotes</a>
+            </li>
+			<li>
+                <a href="committees.html" onclick=$("#menu-close").click();>Committees</a>
+            </li>
+		<li class="dropdown">
+                <a href="satellites.html" onclick=$("#menu-close").click(); class="dropdown-hover" data-hover="dropdown">Satellites <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="recomb-seq.html">RECOMB-Seq</a></li>
+                        <li><a href="http://computationalgenomics.bioinformatics.ucla.edu/2017-recomb-satellite-meetings/" target=_blank>RECOMB-Genetics</a></li>
+                        <li><a href="http://computationalgenomics.bioinformatics.ucla.edu/2017-recomb-satellite-meetings/" target=_blank>RECOMB-CCB</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="index.html#contact" onclick=$("#menu-close").click();>Venue</a>
+            </li>
+		<li><br /><center><img src="img/logo-banner.png" alt="" width="95%"></center></li>
+        </ul>
+    </nav>
+	<header class="main-header-seq">
+		<div class="text-vertical-center">
+            <font color=white>
+			<h1>RECOMB-Seq 2017</h1>
+            <h2>The Seventh RECOMB Satellite Workshop on Massively Parallel Sequencing</h2>
+			<h3>Hong Kong, May 7-8, 2017</</h3>
+			<!--<h2><font color="cyan">* Submissions are Open *</font></h2>-->
+			</font>
+        </div>
+	</header>
+	<!--Body-->
+	<div class="container">
+		<center>
+			<h3>Schedule</h3>
+			<p>(KT: Keynote, RT: Regular Talk, ST: Short Talk)</p>
+			<p>Regular talks are for 20 minutes (including Q&amp;A) and short talks are for 10 minutes (including Q&amp;A).</p>
+			<p><b>Venue: LT6, Level 2, Cheng Yu Tung (CYT) Building, The Chinese University of Hong Kong (CUHK)</b></p>
+			<p>Jump to: <a href="#day1">Day 1</a>, <a href="#day2">Day 2</a>			
+		</center>
+		<div class="agenda col-lg-12">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="day1">
+                        <td class="agenda-date" class="active" rowspan="6">
+                            <div class="dayofmonth">07</div>
+                            <div class="dayofweek">Sunday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            1:00 PM - 2:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Registration</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+							2:00 PM - 3:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								Opening Remarks <br/>
+								<b>SS1: [KT]</b> Olga Troyanskaya
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:00 PM - 3:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:20 PM - 4:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>SS2</b><br />
+								<ol class="begin">
+								<li>Pavel Skums, Alex Zelikovsky, Sergey Knyazev, Igor Mandric, Zoya Dimitrova, Sumathi Ramachandran, David Stiven Campo Rendon, Leonid Bunimovich, Elizabeth Costenbader, Connie Sexton, Siobhan O'Connor, Guo-Liang Xia and Yury Khudyakov. <b> QUENTIN: accurate reconstruction of disease transmissions from viral quasispecies genomic data</b></li>
+							<li>Xinan Liu, Ye Yu, Jinpeng Liu, Chen Qian and Jinze Liu. <b> A Novel Data Structure to Support Ultra-fast Taxonomic Classification of Metagenomic Sequences with k-mer Signatures</b></li>
+							<li>Luca Mariani, Kathryn Weinand, Anastasia Vedenko, Luis A. Barrera and Martha L. Bulyk. <b>Transcription factor-8mer glossary with GENRE genomic background enables precise identification of lineage-specific co-regulators</b></li>
+							
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:20 PM - 4:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            4:30 PM - 5:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>SS3</b><br />
+								<ol class="begin-st">
+									<li>Tony Ginart, Kaiyuan Zhu, Joseph Hui, Ibrahim Numanagic, David Tse, Thomas Courtade and Cenk Sahinalp. <b> Genomic Reads Forests for Compressed Representation of High Throughput Sequence Data</b></li>
+									<li>Hongyi Xin, Jeremie Kim, Sunny Nahar, Can Alkan and Onur Mutlu. <b> LEAP: A Generalization of the Landau-Vishkin Algorithm with Custom Gap Penalties</b></li>
+																<li>Mingfu Shao and Carl Kingsford. <b> Theory and Algorithm for the Minimum Path Flow Decomposition Problem</b></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+					<tr id="day2">
+                        <td class="agenda-date" class="active" rowspan="12">
+                            <div class="dayofmonth">08</div>
+                            <div class="dayofweek">Monday</div>
+                            <div class="shortdate text-muted">May, 2017</div>
+                        </td>
+                        <td class="agenda-time">
+                            8:30 AM - 9:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Registration
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            9:00 AM - 10:00 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>SS4: [KT]</b> Sharon Aviran
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:00 AM - 10:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            10:20 AM - 11:20 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>SS5</b><br />
+								<ol class="begin">
+									<li>Roye Rozov, Gil Goldshlager, Ron Shamir and Eran Halperin. <b> Faucet: streaming de novo assembly graph construction</b></li>
+									<li>Zhe Sun, Ting Wang, Ke Deng, Xiao-Feng Wang, Robert Lafyatis, Ying Ding, Ming Hu and Wei Chen. <b> DIMM-SC: A Dirichlet mixture model for clustering droplet-based single cell transcriptomic data</b></li>
+									<li>Dilip Durai and Marcel Schulz. <b> In-silico read normalization using set multicover optimization</b></li>
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:20 AM - 11:30 AM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            11:30 AM - 12:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <b>SS6</b><br />
+								<ol class="begin-st">
+									<li>Massimo Cairo, Paul Medvedev, Nidia Obscura Acosta, Romeo Rizzi and Alexandru I. Tomescu. <b>Faster Omnitig Listing for Safe and Complete Contig Assembly</b></li>
+																<li>Rahul Nihalani, Sriram P. Chockalingam, Shaowei Zhu, Vijay Vazirani and Srinivas Aluru. <b>Probabilistic Estimation of Overlap Graphs for Large Sequence Datasets</b></li>
+																<li>Xintong Chen, Oscar Rodriguez, Matthew Pendleton, Bojan Losic and Ali Bashir. <b> TransPac: transposon detection and characterization from long-reads</b></li>
+																<li>Jens Quedenfeld and Sven Rahmann. <b> Variant tolerant read mapping using min-hashing</b></li>
+																<li>Sarah Yeo, Lauren Coombe, Justin Chu, Rene Warren and Inanc Birol. <b> ARCS: Assembly Roundup by Chromium Scaffolding</b></li>
+																
+																<li>Abolfazl Hashemi, Banghua Zhu and Haris Vikalo. <b> A Tensor Factorization Framework for Haplotype Assembly of Diploids and Polyploids</b></li>		
+							</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            12:30 PM - 2:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Lunch Break (lunch provided)</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+							2:00 PM - 3:00 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+								<b>SS7</b><br/> 
+								<ol class="begin">
+									<li>Igor Mandric, Sergey Knyazev and Alex Zelikovsky. <b> Repeat-aware evaluation of scaffolding tools</b></li>
+									<li>Vikas Bansal. <b> An accurate algorithm for the detection of DNA fragments from dilution pool sequencing experiments</b></li>
+								</ol>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:00 PM - 3:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Coffee Break</i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="agenda-time">
+                            3:20 PM - 4:20 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Poster Session I [Even numbered posters]<br/>
+				Venue: The Gastronomy Club, Level 5, CYT Building
+                            </div>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td class="agenda-time">
+                            4:20 PM - 4:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                <i>Break</i>
+                            </div>
+                        </td>
+                    </tr>
+		    <tr>
+                        <td class="agenda-time">
+                            4:30 PM - 5:30 PM
+                        </td>
+                        <td class="agenda-events">
+                            <div class="agenda-event">
+                                Poster Session II [Odd numbered posters]<br/>
+				Venue: The Gastronomy Club, Level 5, CYT Building
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	</div>
+	<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; RECOMB 2017 | Theme: Bootstrap Stylish Portfolio | Design: Sumaiya Nazeen</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+	$('ul.sidebar-nav li.dropdown').hover(function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+	}, function() {
+	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+	});
+    </script>
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+</body>
